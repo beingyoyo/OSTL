@@ -1,0 +1,13 @@
+try:
+...  p=db.cursor()
+...  with db.cursor() as p:
+...   p.execute("select * from customer where contact='9167178997'")
+...   r=p.fetchone()
+...   print(r)
+... finally:
+...  print("")
+...
+1
+(5, 'Yash Makwana', '9167178997', 'yash.m@gmail.com')
+
+
